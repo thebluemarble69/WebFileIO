@@ -70,7 +70,7 @@ class Sex(BaseHTTPRequestHandler):
             return
 
         if self.path.startswith("/secret+1234"):
-            print(self.path)
+            print('Single line data saved.')
             savef({"timestamp": str(int(time.time())), "message": self.path[12:]})
             gogo(self, "temp.html", "text/html", "saved sucessfully!", False)
             return
