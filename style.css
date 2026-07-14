@@ -1,0 +1,301 @@
+@font-face{
+    font-family: "AtiqAhmed";
+    src: url("./MontenegrinGothicOne-Regular.ttf");
+}
+
+@font-face{
+    font-family: "DilrajBhai";
+    src: url("./Unbounded-VariableFont_wght.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "AtiqAhmed", serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-image: linear-gradient(to bottom right, #000000, #434343);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    align-items: center;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 50%;
+    width: 1px;
+    height: 1px;
+    box-shadow: 10px 10px 300px 360px #ffffff40;
+}
+.s{
+    margin-top: 6.2rem;
+}
+.s h1{
+    background-image: linear-gradient(to bottom right, #085078, #85D8CE);
+    background-clip: text;
+    color: transparent;
+    font-size: 65px;
+    text-shadow: 0px 0px 40px rgb(7, 223, 199);
+    text-align: center;
+
+}
+.s h1::selection{
+    background-color: purple;
+    color: rgb(48, 162, 177);
+}
+
+.wrapper{
+    width: max-content;
+    height: max-content;
+    margin-top: 3rem;
+
+}
+
+.wrapper .pp {
+    color: #7bf2f7;
+    box-sizing: content-box;
+    padding: 0.7rem 1.4rem;
+    font-size: 19px;
+    font-family: "DilrajBhai", sans-serif;
+    font-weight: 400;
+    border: 1px solid rgba(255,255,255,0.43);
+    border-radius: 12px;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    background-color: rgba(255,255,255,0.2);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.card {
+    /* color used to softly clip top and bottom of the .words container */
+    --bg-color: #111;
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+    border: 2px solid #ffffff40;
+    position: relative;
+    margin-top: 2rem;
+  }
+  .card::after{
+    content: '';
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 30px 1px #ffffff60;
+  }
+  .loader {
+    color: rgb(124, 124, 124);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 40px;
+    padding: 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 8px;
+  }
+
+.sexx{color: rgba(255,255,255,0.8);height: 42px;}
+  
+  .words {
+    overflow: hidden;
+    position: relative;
+  }
+  .words::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      #111,
+      transparent ,
+      transparent 70%,
+      #111 90%
+    );
+    z-index: 20;
+  }
+  
+  .word {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #956afa;
+    background-color: transparent;
+    animation: spin_4991 4s infinite;
+  }
+  
+
+/* Section for the page file  */
+
+.pageTot{
+  font-size: 81px;
+  margin-top: 6.4rem;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  text-shadow: 0 0 35px rgba(152, 65, 252, 0.801);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pageTot::selection{
+  color:#fff;
+  background-color: purple;
+}
+
+.pageForm {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.pageBox {
+  box-sizing: content-box;
+  outline: none;
+  border-radius: 32px;
+  border: 3px solid #b18f8f;
+  resize: none;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.1;
+  width: 650px;
+  height: 380px;
+  background-color: lightgray;
+  padding: 1rem;
+  color: #666666;
+  transition: all .3s;
+}
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 30px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+.pageBox:focus {
+  color: #333333;
+  border-color: #a6b0e7;
+}
+
+
+/* Default Section  */
+  @keyframes spin_4991 {
+    10% {
+      -webkit-transform: translateY(-102%);
+      transform: translateY(-102%);
+    }
+  
+    25% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  
+    35% {
+      -webkit-transform: translateY(-202%);
+      transform: translateY(-202%);
+    }
+  
+    50% {
+      -webkit-transform: translateY(-200%);
+      transform: translateY(-200%);
+    }
+  
+    60% {
+      -webkit-transform: translateY(-302%);
+      transform: translateY(-302%);
+    }
+  
+    75% {
+      -webkit-transform: translateY(-300%);
+      transform: translateY(-300%);
+    }
+  
+    85% {
+      -webkit-transform: translateY(-402%);
+      transform: translateY(-402%);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-400%);
+      transform: translateY(-400%);
+    }
+  }
+
+@media (max-width: 695px){
+  .pageTot, .pageForm{
+    scale: 0.7;
+  }
+}
+@media (max-width: 505px){
+  .pageForm, .pageTot{scale: 0.6;}
+  .pageForm{margin-top: 2rem;}
+}
+  @media (max-width: 480px) {
+    body{height: 100dvh;width: 100dvw;}
+    .s h1{font-size: 50px;}
+    .wrapper .pp{font-size: 17px;}
+    .card{scale: 0.9;}
+  }
+@media (max-width: 467px){
+  .s h1{font-size: 47px;}
+  .wrapper .pp{font-size: 15px;}
+  .card {scale: 0.79;}
+}

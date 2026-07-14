@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            color: #77ff00;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            font-size: 45px;
+            margin-top: 5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 300;
+            text-align: center;
+        }
+    </style>
+    <title>Documents</title>
+</head>
+<body>
+    <h1>Saved Sucessfully</h1>
+    <script defer>
+        setTimeout(() => {
+            window.location.href = "/";
+        }, 3000);
+    </script>
+</body>
+</html>

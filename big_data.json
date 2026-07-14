@@ -1,0 +1,12 @@
+[
+    {
+        "message": [
+            "#include <bits/stdc++.h>\r\nusing namespace std;\r\n\r\nint main() {\r\n    char op;\r\n    double a, b, res;\r\n\r\n    cout << \"Enter an operator (+, -, *, /): \";\r\n    cin >> op;\r\n    cout << \"Enter two numbers: \";\r\n    cin >> a >> b;\r\n\r\n    switch (op) {\r\n    case '+':\r\n        res = a + b;\r\n        break;\r\n    case '-':\r\n        res = a - b;\r\n        break;\r\n    case '*':\r\n        res = a * b;\r\n        break;\r\n    case '/':\r\n        res = a / b;\r\n        break;\r\n    default:\r\n        cout << \"Error! Operator is not correct\";\r\n        res = -DBL_MAX;\r\n    }\r\n\r\n    if (res != -DBL_MAX)\r\n        cout << \"Result: \" << res;\r\n    return 0;\r\n}"
+        ]
+    },
+    {
+        "message": [
+            "            big_save(parse_qs(ddd)\r\n\r\n\r\n\r\n\r\n\r\nh9hy9y*)&Y_(*GB() \r\n\r\n\r\n#\r\n\r\n$\r\n$\r\n\r\n\r\n\r\n+F+Ff\r\n\r\nf\r\nF\r\n\r\nF\r\nf(Fhy08&Gf0(&BV cfc\r\n\r\n\r\nD\r\n\r\nfF8Y(Fy8"
+        ]
+    }
+]

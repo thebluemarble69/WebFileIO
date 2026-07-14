@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{}}</title>
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"> -->
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-image: linear-gradient(to bottom right, #000000, #434343);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    align-items: center;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 50%;
+    width: 1px;
+    height: 1px;
+    box-shadow: 10px 10px 300px 360px #ffffff40;
+}
+.s{
+    margin-top: 6.2rem;
+}
+.s h1{
+    background-image: linear-gradient(to bottom right, #085078, #85D8CE);
+    background-clip: text;
+    color: transparent;
+    font-size: 65px;
+    text-shadow: 0px 0px 40px rgb(7, 223, 199);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.s h1::selection{
+    background-color: purple;
+    color: rgb(48, 162, 177);
+}
+
+.wrapper{
+    width: max-content;
+    height: max-content;
+    margin-top: 3rem;
+
+}
+
+.wrapper .pp {
+    color: #7bf2f7;
+    box-sizing: content-box;
+    padding: 0.7rem 1.4rem;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    border: 1px solid rgba(255,255,255,0.43);
+    border-radius: 12px;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    background-color: rgba(255,255,255,0.2);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.card {
+    /* color used to softly clip top and bottom of the .words container */
+    --bg-color: #111;
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+    border: 2px solid #ffffff40;
+    position: relative;
+    margin-top: 2rem;
+  }
+  .card::after{
+    content: '';
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 30px 1px #ffffff60;
+  }
+  .loader {
+    color: rgb(124, 124, 124);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 40px;
+    padding: 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 8px;
+  }
+
+.sexx{color: rgba(255,255,255,0.8);height: 42px;}
+  
+  .words {
+    overflow: hidden;
+    position: relative;
+  }
+  .words::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      #111,
+      transparent ,
+      transparent 70%,
+      #111 90%
+    );
+    z-index: 20;
+  }
+  
+  .word {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #956afa;
+    background-color: transparent;
+    animation: spin_4991 4s infinite;
+  }
+/* Default Section  */
+  @keyframes spin_4991 {
+    10% {
+      -webkit-transform: translateY(-102%);
+      transform: translateY(-102%);
+    }
+  
+    25% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  
+    35% {
+      -webkit-transform: translateY(-202%);
+      transform: translateY(-202%);
+    }
+  
+    50% {
+      -webkit-transform: translateY(-200%);
+      transform: translateY(-200%);
+    }
+  
+    60% {
+      -webkit-transform: translateY(-302%);
+      transform: translateY(-302%);
+    }
+  
+    75% {
+      -webkit-transform: translateY(-300%);
+      transform: translateY(-300%);
+    }
+  
+    85% {
+      -webkit-transform: translateY(-402%);
+      transform: translateY(-402%);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-400%);
+      transform: translateY(-400%);
+    }
+  }
+
+  @media (max-width: 480px) {
+    body{height: 100dvh;width: 100dvw;}
+    .s h1{font-size: 50px;}
+    .wrapper .pp{font-size: 17px;}
+    .card{scale: 0.9;}
+  }
+@media (max-width: 467px){
+  .s h1{font-size: 47px;}
+  .wrapper .pp{font-size: 15px;}
+  .card {scale: 0.79;}
+}
+    </style>
+</head>
+<body>
+    <div class="s"><h1>give a input query</h1></div>
+    <div class="card">
+        <div class="loader">
+          <p class="sexx">worship us with a</p>
+          <div class="words">
+            <span class="word">Query</span>
+            <span class="word">URL</span>
+            <span class="word">Parameter</span>
+            <span class="word">Location</span>
+            <span class="word">Name</span>
+          </div>
+        </div>
+      </div>
+    <div class="wrapper"><p class="pp">{%%}</p></div>
+
+</body>
+</html>
