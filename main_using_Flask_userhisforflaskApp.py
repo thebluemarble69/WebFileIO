@@ -80,7 +80,7 @@ def catch_all_get(u_path):
     if full_path == "/":
         return gogo(full_path, "index.html", "text/html", "{null} - give a query", False)
 
-    if full_path.startswith("/secret+1234"):
+    if full_path.startswith("/riddhi+1234"):
         print("Single line data saved.")
         savef({"timestamp": str(int(time.time())), "message": full_path[12:]})
         return gogo(full_path, "temp.html", "text/html", "saved sucessfully!", False)
